@@ -12,15 +12,12 @@
     <ini name="error_reporting" value="-1"/>
     <server name="APP_ENV" value="test" force="true"/>
     <server name="APP_DEBUG" value="false" force="true"/>
-    <server name="KERNEL_CLASS" value="DrinkMachine\Infrastructure\Symfony\Kernel"/>
+    <server name="KERNEL_CLASS" value="Skeleton\Infrastructure\Symfony\Kernel"/>
   </php>
 
   <testsuites>
-    <testsuite name="functional">
-      <directory>./tests/Functional</directory>
-    </testsuite>
-    <testsuite name="unit">
-      <directory>./tests/Unit</directory>
+    <testsuite name="test">
+      <directory>./tests</directory>
     </testsuite>
   </testsuites>
 </phpunit>
